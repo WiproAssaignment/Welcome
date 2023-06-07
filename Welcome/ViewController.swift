@@ -9,12 +9,18 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var buttonLabel: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        print("Success")
+        configureBorder()
+        
     }
-
+    
+    func configureBorder() {
+        buttonLabel.layer.borderColor = UIColor.gray.cgColor
+        buttonLabel.layer.borderWidth = 1.0
+    }
 
 }
 
